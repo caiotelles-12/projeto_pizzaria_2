@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+:root {
+    --bg: #e0e0e0;
+    --color-black-text: #000;
+    --color-red: #D93A2B;
+    --color-yellow: #F2CB07;
+    --color-hover: #bfbebead;
+    --color-border: #464646;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3% 0 1%;
+}
+
+
+/* Estilo do cabeçalho */
+
+.cabecalho {
+    width: 100%;
+    background: var(--bg);
+    padding: 3px 0 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    border: 1px solid var(--color-hover);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.interface_cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho_logo_titulo {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_logo {
+    max-width: 80px;
+    margin-right: 20px;
+}
+
+.cabecalho_titulo {
+    color: var(--color-red);
+    font-size: 2.2rem;
+}
+
+.cabecalho_titulo span {
+    color: var(--color-yellow);
+}
+
+.cabecalho_navegacao ul {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho_navegacao ul li a {
+    color: var(--color-black-text);
+    font-size: 1.1rem;
+    transition: background 0.1s linear;
+    cursor: default;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.cabecalho_navegacao ul li a:hover  {
+    background-color: var(--color-hover);
+}
+
+.cabecalho_navegacao ul li a:focus {
+    background-color: var(--color-hover);
+}
+
+/* Estilo da seção apresentação */
+
+
+.interface_principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.principal_apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.principal_apresentacao_textos {
+    text-align: center;
+}
+
+.principal_apresentacao_titulo {
+    color: var(--color-red);
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.principal_apresentacao_titulo span {
+    color: var(--color-yellow);
+}
+
+.principal_apresentacao_subtitulo {
+    font-weight: 300;
+}
+
+.botao_montar {
+    margin: 50px auto 0 auto;
+    padding: 20px;
+    border: none;
+    border: 2px solid var(--color-red);
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: var(--color-red);
+    color: var(--bg);
+    transition: 0.1s linear;
+}
+
+.botao_montar:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-red);
+    border: 2px solid var(--color-red);
+}
+
+.botao_montar:active {
+    transform: scale(0.9);
+}
+
+.animacao {
+    background-color: var(--color-red);
+    height: 450px;
+    margin-top: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.principal_apresentacao_imagem {
+    background-color: var(--color-yellow);
+    height: 500px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+/* Estilo do Sobre Nós */
+
+.interface_sobre-nos {
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.principal_sobre-nos_textos {
+    text-align: justify;
+    width: 700px;    
+}
+
+.principal_sobre-nos_textos_titulo {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: var(--color-red);
+    margin-bottom: 10px;
+}
+
+/* Estilo do Cardápio */
+
+.principal_cardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    /* background-color: var(--color-hover); */
+    /* color: white; */
+    margin-bottom: 100px;
+}
+
+.primeira_linha {
+    display: flex;
+    gap: 30px;
+}
+
+.segunda_linha {
+    display: flex;
+    gap: 30px;
+}
+
+.terceira_linha {
+    display: flex;
+    gap: 30px;
+}
+
+.principal_cardapio_card {
+    text-align: center;
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.principal_cardapio_card_imagem {
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: var(--color-hover);
+    margin-bottom: 10px;
+}
+
+.principal_cardapio_card_titulo {
+    font-size: 2.05rem;
+}
+
+.principal_cardapio_card_paragrafo {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: var(--color-red);
+    color: var(--color-yellow);
+    font-size: 1.2rem;
+}
